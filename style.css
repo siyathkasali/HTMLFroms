@@ -1,0 +1,145 @@
+/* 1 - BASE FORM STYLES */
+
+body{
+    background: #141414;
+    margin: 0;
+    font-family: arial;
+}
+
+header{
+    background: #0d0d0d;
+    text-align: center;
+    padding: 20px;
+}
+
+form{
+    color:#eee;
+    margin:20px;
+}
+
+form p{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    opacity: 0;
+    margin: 0;
+    width: 0;
+}
+
+label[for="male"], label[for="female"]{
+    margin-bottom: 10px;
+    display:inline-block;
+    padding-left: 26px;
+    background: url(img/checks.png) no-repeat;
+    background-position: 0 -32px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+input:checked + label[for="male"],
+input:checked + label[for="female"]{
+    background-position: 0 0;
+    color:#ce1010;
+}
+
+/* 3 - CHECKBOX STYLES  */
+
+label[for="web"], label[for="photoshop"],label[for="singing"]{
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-left: 26px;
+    background: url(img/checks.png) no-repeat;
+    background-position: 0 -98px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+input:checked + label[for="web"],
+input:checked + label[for="photoshop"],
+input:checked + label[for="singing"]{
+    background-position: 0 -65px;
+    color:#ce1010;
+}
+
+/* 4 - TEXT INPUT STYLES & FIELDSETS */
+
+fieldset{
+    padding:20px;
+    margin: 20px 0;
+    border: 3px solid #222;
+}
+
+legend{
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+input[type="mail"],
+input[type="telephone"]{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 50px;
+    border: 0;
+    background: url(img/inputs.png) no-repeat;
+    background-color: #222;
+    color:#fff;
+}
+
+input[type="mail"]{
+     background-position: 7px 7px;
+}
+
+input[type="telephone"]{
+    background-position: 7px -60px;
+}
+
+
+/* 5 - SELECT BOXES */
+
+select{
+    -webkit-appearance: none;
+    margin: 30px 0;
+    display: block;
+    padding: 10px 50px 10px 10px;
+    background: url(img/select.png) no-repeat 95% center;
+    background-color: #222;
+    color: white;
+    width: 280px;
+    border: 2px solid #fff;
+}
+
+input[type="submit"]{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: #ce1010;
+    color:#fff;
+    border: 0;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    width: 280px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* 6 - INPUT VALIDATION STYLES */
+
+input[type="mail"]:valid,
+input[type="telephone"]:valid{
+    border:2px solid #fff;
+}
+
+input[type="mail"]:valid{
+    background-position: 7px -22px;
+}
+
+input[type="telephone"]:valid{
+    background-position: 7px -58px;
+}
+
+input[type="mail"]:valid + .tick,
+input[type="telephone"]:valid + .tick{
+background: url(img/tick.png) center; 
+background-size: 100%;
+}

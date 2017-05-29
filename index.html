@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>HTML 5 fomrs</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML 5 fomrs</title>
+
+</head>
+ <body>
+    <header>
+      <img src="img/logo.png" />
+    </header>
+<form>
+    <!--Gender-->
+    <p>You are a</p>
+    <input type="radio" id="male" name="gender">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender">
+    <label for="female">Female</label>
+
+    <!--Intrested in-->
+    <p>In Which area Intrested in</p>
+    <input type="checkbox" id="web">
+    <label for="web">Web Design</label><br>
+    <input type="checkbox" id="photoshop">
+    <label for="photoshop">Photoshop</label><br>
+    <input type="checkbox" id="singing">
+    <label for="singing">Singing AR Rahuman Songs</label>
+
+    <!--Contact Info-->
+    <fieldset>
+        <legend>Contact Info</legend>
+        <input type="mail" placeholder="Email" required>
+        <span class="tick"></span>
+        <input type="telephone" placeholder="Phone Number" required>
+        <span class="tick"></span>
+    </fieldset>
+
+    <!--Contacted-->
+    <p>How Would you like to contacted?</p>
+    <select>
+        <option>By Email</option>
+        <option>By Telephone</option>
+    </select>
+    <input type="submit" value="become a ninja">
+</form>
+  </body>
 </html>
